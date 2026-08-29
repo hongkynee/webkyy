@@ -4,6 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Khám Phá Nhiếp Ảnh Thiên Nhiên</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        h1, h2 {
+            margin: 0;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        section {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        figure {
+            margin: 0;
+            background: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        figcaption {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #666;
+            border-top: 1px solid #ddd;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
 
@@ -17,25 +104,29 @@
             <ul>
                 <li>Máy ảnh DSLR hoặc Mirrorless</li>
                 <li>Ống kính góc rộng (Wide-angle lens)</li>
+                <li>Ống kính Tele (Telephoto lens)</li>
                 <li>Chân máy ảnh (Tripod) chắc chắn</li>
+                <li>Bộ lọc (Filters)</li>
             </ul>
         </section>
 
         <section>
             <h2>Bộ sưu tập hình ảnh</h2>
-            <figure>
-                <img src="https://picsum.photos/id/1018/400/250" alt="Cảnh núi non hùng vĩ lúc bình minh">
-                <figcaption>Rừng núi hùng vĩ</figcaption>
-            </figure>
-            <figure>
-                <img src="https://picsum.photos/id/1015/400/250" alt="Bờ biển đá hoang sơ với sóng biển">
-                <figcaption>Bờ biển hoang sơ</figcaption>
-            </figure>
-            <figure>
-                <!-- ĐÃ THAY ĐỔI HÌNH ẢNH THỨ 3 Ở ĐÂY -->
-                <img src="https://picsum.photos/id/1003/400/250" alt="Chú hươu nhỏ trong rừng">
-                <figcaption>Động vật hoang dã</figcaption>
-            </figure>
+            <div class="gallery">
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?q=80&w=600&auto=format&fit=crop" alt="Cảnh núi non hùng vĩ lúc bình minh">
+                    <figcaption>Rừng núi hùng vĩ</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=600&auto=format&fit=crop" alt="Bờ biển đá hoang sơ với sóng biển">
+                    <figcaption>Bờ biển hoang sơ</figcaption>
+                </figure>
+                <figure>
+                    <!-- ĐÃ CẬP NHẬT: Thay đổi hình con chó bằng hình báo tuyết -->
+                    <img src="https://images.unsplash.com/photo-1579380633182-1c21b2d9737e?q=80&w=600&auto=format&fit=crop" alt="Một chú báo tuyết oai vệ trong môi trường tuyết trắng">
+                    <figcaption>Báo tuyết hoang dã</figcaption>
+                </figure>
+            </div>
         </section>
 
         <section>
